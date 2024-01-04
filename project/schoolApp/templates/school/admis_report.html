@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Admin Report</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>classname</th>
+            <th>fathername</th>
+            <th>contact</th>
+            <th>actions</th>
+           
+        </tr>
+        {% for s in allresult %}
+        <tr>
+            <td>{{s.id}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.classname}}</td>
+            <td>{{s.fathername}}</td>
+            <td>{{s.contact}}</td>
+            <td><a href="/ad/delete/{{s.id}}">delete</a>
+                <a href="/ad/update/{{s.id}}">update</a>
+            </td>
+            {% endfor %}
+        </tr>
+    </table> 
+</body>
+</html>

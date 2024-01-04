@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <title>College Admin Report </title>
+        <link rel="stylesheet" href="{% static 'images/ka1.css' %}">
+    </head>
+    <body>
+
+        <form method="POST">
+            <table id=karthik>
+                {{form.as_table}}
+                {% csrf_token %}
+            </table>
+            <br><br>
+            <br>
+            <button type="submit" ,value="addstudent">Add Student</button>
+
+             
+        </form>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            teacher welcome
+        </title>
+    </head>
+    <body>
+        <form method="POST">
+            <table>
+            {{form.as_table}}
+            </table>
+            {% csrf_token  %}
+            <br><br>
+            <button type="submit" ,value="addteacher">
+                addteacher
+            </button>
+        </form>
+    </body>
+</html>

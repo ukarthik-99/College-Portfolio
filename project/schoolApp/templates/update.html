@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <title>first html </title>
+        <link rel="stylesheet" href="{% static 'images/ka1.css' %}">
+    </head>
+    <body>
+
+        <form method="POST">
+            <table>
+                {{form.as_table}}
+                {% csrf_token %}
+            </table>
+            <br><br>
+            <br>
+            <button type="submit" ,value="addstudent">addstudent</button>
+
+             
+        </form>
+    </body>
+</html>

@@ -1,0 +1,41 @@
+div{
+    float: left;
+    border-style: dashed;
+    text-align: center;
+    width: 40%;
+    padding: 40px;
+    margin: 30px;
+    border-radius:40px;
+    border-color:crimson;
+    
+
+
+}
+h1{
+    color:blueviolet;
+    text-align:center;
+}
+
+h2{
+    color:red;
+    text-align:center;
+}
+button{
+    width:100px;
+}
+
+body{
+    background-image:url(images/karthik.jpg);
+    background-size: 100%;
+}
+
+h3{
+    color:red;
+}
+
+a:link{
+    color:chocolate;
+}
+
+
+
